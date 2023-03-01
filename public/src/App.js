@@ -7,8 +7,8 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 export default function App() {
   return (
     <BrowserRouter>
-      <header>
-        <ul>
+      <header class="border-2 border-white">
+        <ul class="flex justify-around text-white rounded-lg">
           <li>
             <Link to='/'>Home</Link>
           </li>
