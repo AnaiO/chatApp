@@ -7,8 +7,8 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 export default function App() {
   return (
     <BrowserRouter>
-      <header class="border-2 border-white">
-        <ul class="flex justify-around text-white rounded-lg">
+      <header className="border-2 border-white my-8">
+        <ul className="flex justify-around text-white rounded-lg">
           <li>
             <Link to='/'>Home</Link>
           </li>
@@ -20,11 +20,13 @@ export default function App() {
           </li>
         </ul>
       </header>
-      <Routes>
-        <Route path='/login' element={<Login />} />
-        <Route path='/sign-in' element={<SignIn />} />
-        <Route exact path='/' element={<Home />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path='/login' element={<Login />} />
+          <Route path='/sign-in' element={<SignIn />} />
+          <Route exact path='/' element={<Home />} />
+        </Routes>
+      </main>
     </BrowserRouter>
   );
 }
