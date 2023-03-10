@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const mongooseConnection = require('./helpers/mangoose-connection');
+const mongooseConnection = require('./config/mangoose-connection');
 require('dotenv').config();
 const authRouter = require('./routes/auth');
 const app = express();
